@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LugiDex - Home</title>
+<link href="style.css" rel="stylesheet"/>
+<script>
+function searchPage() {
+  const input = document.getElementById('searchInput').value.toLowerCase();
+  window.location.href = input + '.html';
+}
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap" rel="stylesheet"/>
+<style>
+.dark-mode {
+    background-color: #111;
+    color: #eee;
+}
+.dark-mode .container {
+    background-color: #222;
+    border-color: #555;
+}
+.dark-mode nav a {
+    background-color: #555 !important;
+    color: #fff !important;
+}
+.dark-mode a {
+    color: #66ccff !important;
+}
+.dark-mode a:hover {
+    opacity: 0.85;
+}
+
+button#themeToggle:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 12px rgba(255, 0, 0, 0.6);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px !important;
+        margin: 20px auto !important;
+    }
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    nav a, a {
+        display: inline-block;
+        margin: 10px 5px;
+        font-size: 1em;
+    }
+    ul {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+    ul li {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px !important;
+        margin: 20px auto !important;
+    }
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    nav a, a {
+        display: inline-block;
+        margin: 10px 5px;
+        font-size: 1em;
+    }
+    ul {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+    ul li {
+        margin: 10px;
+    }
+}
+</style>
+<style>
+body, .container, nav a, a, ul li {
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+</style>
+</head>
+<body style="font-family: 'Press Start 2P', sans-serif;"><div class="container" style="max-width: 960px; margin: 40px auto; padding: 40px; background-color: #fff; border-radius: 16px; box-shadow: 0 0 24px rgba(0,0,0,0.1); text-align: center;"><button id="themeToggle" onclick="toggleTheme()" style="margin-bottom: 20px; padding: 8px 16px; background: #c40000; color: white; border: none; border-radius: 8px; font-weight: bold; cursor: pointer;"><img alt="Toggle Theme" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png" style="display: block; margin: 0 auto 20px auto; max-width: 300px;"/>Toggle Dark Mode</button><h1 style="color: #c40000; margin: 20px 0 10px; text-align: center;">Welcome to the LugiDex</h1><img alt="Lugia" src="img/lugia.png" style="display: block; margin: 0 auto 20px auto; max-width: 300px;"/><form action="search.html" method="get" style="margin: 20px 0;"><input name="q" placeholder="Search Pokémon..." style="padding: 15px; font-size: 1.1em; width: 60%; max-width: 400px; border: 2px solid #333; border-radius: 10px;" type="text"/></form><p style="font-size: 1.2em; color: #444; margin-bottom: 30px;">Explore the original Kanto region Pokémon in this elegant and powerful Pokédex experience.</p><div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 15px; padding-top: 20px; max-width: 100%;"><a href="bulbasaur.html" style="display: block; text-align: center; background: linear-gradient(135deg, #c40000, #900); color: white; padding: 12px; font-size: 0.9em; border-radius: 10px; text-decoration: none; box-shadow: 0 2px 5px rgba(0,0,0,0.2); transition: transform 0.2s;">Bulbasaur</a><a href="ivysaur.html" style="display: block; text-align: center; background: linear-gradient(135deg, #c40000, #900); color: white; padding: 12px; font-size: 0.9em; border-radius: 10px; text-decoration: none; box-shadow: 0 2px 5px rgba(0,0,0,0.2); transition: transform 0.2s;">Ivysaur</a><a href="venusaur.html" style="display: block; text-align: center; background: linear-gradient(135deg, #c40000, #900); color: white; padding: 12px; font-size: 0.9em; border-radius: 10px; text-decoration: none; box-shadow: 0 2px 5px rgba(0,0,0,0.2); transition: transform 0.2s;">Venusaur</a><a href="charmander.html" style="display: block; text-align: center; background: linear-gradient(135deg, #c40000, #900); color: white; padding: 12px; font-size: 0.9em; border-radius: 10px; text-decoration: none; box-shadow: 0 2px 5px rgba(0,0,0,0.2); transition: transform 0.2s;">Charmander</a><a href="charmeleon.html" style="display: block; text-align: center; background: linear-gradient(135deg, #c40000, #900); color: white; padding: 12px; font-size: 0.9em; border-radius: 10px; text-decoration: none; box-shadow: 0 2px 5px rgba(0,0,0,0.2); transition: transform 0.2s;">Charmeleon</a><a href="charizard.html" style="display: block; text-align: center; background: linear-gradient(135deg, #c40000, #900); color: white; padding: 12px; font-size: 0.9em; border-radius: 10px; text-decoration: none; box-shadow: 0 2px 5px rgba(0,0,0,0.2); transition: transform 0.2s;">Charizard</a><a href="squirtle.html" style="display: block; text-align: center; background: linear-gradient(135deg, #c40000, #900); color: white; padding: 12px; font-size: 0.9em; border-radius: 10px; text-decoration: none; box-shadow: 0 2px 5px rgba(0,0,0,0.2); transition: transform 0.2s;">Squirtle</a><a href="wartortle.html" style="display: block; text-align: center; background: linear-gradient(135deg, #c40000, #900); color: white; padding: 12px; font-size: 0.9em; border-radius: 10px; text-decoration: none; box-shadow: 0 2px 5px rgba(0,0,0,0.2); transition: transform 0.2s;">Wartortle</a><a href="blastoise.html" style="display: block; text-align: center; background: linear-gradient(135deg, #c40000, #900); color: white; padding: 12px; font-size: 0.9em; border-radius: 10px; text-decoration: none; box-shadow: 0 2px 5px rgba(0,0,0,0.2); transition: transform 0.2s;">Blastoise</a></div></div></body>
+</html>

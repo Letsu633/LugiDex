@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head><meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta charset="utf-8"/>
+<title>Search Pokémon</title>
+<link href="style.css" rel="stylesheet"/>
+<style>
+        #results a {
+            display: block;
+            margin: 10px 0;
+            font-weight: bold;
+            color: #0073e6;
+        }
+    
+button#themeToggle:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 12px rgba(255, 0, 0, 0.6);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px !important;
+        margin: 20px auto !important;
+    }
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    nav a, a {
+        display: inline-block;
+        margin: 10px 5px;
+        font-size: 1em;
+    }
+    ul {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+    ul li {
+        margin: 10px;
+    }
+}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap" rel="stylesheet"/>
+<style>
+.dark-mode {
+    background-color: #111;
+    color: #eee;
+}
+.dark-mode .container {
+    background-color: #222;
+    border-color: #555;
+}
+.dark-mode nav a {
+    background-color: #555 !important;
+    color: #fff !important;
+}
+.dark-mode a {
+    color: #66ccff !important;
+}
+.dark-mode a:hover {
+    opacity: 0.85;
+}
+</style>
+<style>
+body, .container, nav a, a, ul li {
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+</style>
+</head>
+<body style="font-family: 'Press Start 2P', sans-serif;">
+<div class="container" style="max-width: 960px; margin: 40px auto; padding: 40px; background-color: #fff; border-radius: 16px; box-shadow: 0 0 24px rgba(0,0,0,0.1); text-align: center;"><button id="themeToggle" onclick="toggleTheme()" style="margin-bottom: 20px; padding: 8px 16px; background: #c40000; color: white; border: none; border-radius: 8px; font-weight: bold; cursor: pointer;"><img alt="Toggle Theme" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png" style="display: block; margin: 0 auto 20px auto; max-width: 300px;"/>Toggle Dark Mode</button>
+<h1 style="color: #c40000; margin: 20px 0 10px; text-align: center;">Search Pokémon</h1>
+<input id="searchBox" placeholder="Type a Pokémon name..." style="padding: 10px; width: 80%; max-width: 400px;" type="text"/>
+<div id="results"></div>
+</div>
+<script>
+        const pokemonList = [
+            { name: "Bulbasaur", url: "bulbasaur.html" },
+            { name: "Ivysaur", url: "ivysaur.html" },
+            { name: "Venusaur", url: "venusaur.html" },
+            { name: "Charmander", url: "charmander.html" },
+            { name: "Charmeleon", url: "charmeleon.html" },
+            { name: "Charizard", url: "charizard.html" },
+            { name: "Squirtle", url: "squirtle.html" },
+            { name: "Blastoise", url: "blastoise.html" }
+        ];
+
+        const searchBox = document.getElementById("searchBox");
+        const resultsDiv = document.getElementById("results");
+
+        searchBox.addEventListener("input", function() {
+            const query = this.value.toLowerCase();
+            resultsDiv.innerHTML = "";
+            const filtered = pokemonList.filter(p => p.name.toLowerCase().includes(query));
+            if (filtered.length > 0) {
+                filtered.forEach(p => {
+                    const link = document.createElement("a");
+                    link.href = p.url;
+                    link.textContent = p.name;
+                    resultsDiv.appendChild(link);
+                });
+            } else {
+                resultsDiv.textContent = "No results found.";
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Squirtle</title>
+<link href="style.css" rel="stylesheet"/>
+<script>
+function searchPage() {
+  const input = document.getElementById('searchInput').value.toLowerCase();
+  window.location.href = input + '.html';
+}
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap" rel="stylesheet"/>
+<style>
+body, .container, nav a, a, ul li {
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px !important;
+        margin: 20px auto !important;
+    }
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    nav a, a {
+        display: inline-block;
+        margin: 10px 5px;
+        font-size: 1em;
+    }
+    ul {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+    ul li {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px !important;
+        margin: 20px auto !important;
+    }
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    nav a, a {
+        display: inline-block;
+        margin: 10px 5px;
+        font-size: 1em;
+    }
+    ul {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+    ul li {
+        margin: 10px;
+    }
+}
+</style>
+</head>
+<body style="font-family: 'Press Start 2P', sans-serif;"><div class="container" style="max-width: 960px; margin: 40px auto; padding: 40px; background-color: #fff; border-radius: 16px; box-shadow: 0 0 24px rgba(0,0,0,0.1); text-align: center;"><h1>Squirtle</h1><img alt="Pokémon Image" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png" style="display: block; margin: 0 auto 20px auto; max-width: 300px;"/><div style="text-align: center;"></div><div style="display: flex; flex-direction: column; justify-content: center;"><h2 style="color: #c40000; margin: 20px 0 10px; text-align: center;">Pokédex Entry</h2><p style="margin: 6px 0; font-size: 1em;">Squirtle’s shell is not merely used for protection. The shell’s rounded shape and the grooves on its surface help minimize resistance in water.</p><h2 style="color: #c40000; margin: 20px 0 10px; text-align: center;">Stats</h2><ul style="list-style: none; padding: 0; margin: 0 0 20px 0;"><li style="margin-bottom: 10px;">HP: 44</li><li style="margin-bottom: 10px;">Attack: 48</li><li style="margin-bottom: 10px;">Defense: 65</li><li style="margin-bottom: 10px;">Sp. Atk: 50</li><li style="margin-bottom: 10px;">Sp. Def: 64</li><li style="margin-bottom: 10px;">Speed: 43</li></ul><h2 style="color: #c40000; margin: 20px 0 10px; text-align: center;">Evolution Line</h2><ul style="list-style: none; padding: 0; margin: 0 0 20px 0;"><li style="margin-bottom: 10px;"><a href="blastoise.html" onmouseenter="this.style.transform='scale(1.1)';" onmouseleave="this.style.transform='scale(1)';" onmouseover="playEvoSound();" style="display: inline-block; padding: 8px 16px; background-color: #c40000; color: white; border-radius: 8px; text-decoration: none; font-weight: bold;"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png" style="display: block; margin: 0 auto 20px auto; max-width: 300px;"/>Blastoise</a></li></ul><h2 style="color: #c40000; margin: 20px 0 10px; text-align: center;">Type</h2><ul style="list-style: none; padding: 0; margin: 0 0 20px 0;"><li style="margin-bottom: 10px;">Water</li></ul><h2 style="color: #c40000; margin: 20px 0 10px; text-align: center;">Abilities</h2><ul style="list-style: none; padding: 0; margin: 0 0 20px 0;"><li style="margin-bottom: 10px;">Torrent</li><li style="margin-bottom: 10px;">Rain Dish</li></ul><h2 style="color: #c40000; margin: 20px 0 10px; text-align: center;">Moveset</h2><ul style="list-style: none; padding: 0; margin: 0 0 20px 0;"><li style="margin-bottom: 10px;">Tackle</li><li style="margin-bottom: 10px;">Tail Whip</li><li style="margin-bottom: 10px;">Water Gun</li><li style="margin-bottom: 10px;">Withdraw</li></ul><a href="index.html" style="margin-top: 30px; display: inline-block; padding: 10px 20px; background-color: #c40000; color: white; border-radius: 6px; text-decoration: none;">← Back to Home</a></div></div></body>
+</html>
